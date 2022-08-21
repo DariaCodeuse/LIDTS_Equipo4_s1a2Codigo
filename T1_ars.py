@@ -36,7 +36,3 @@ for i in range(A):      # Número de ciclo
 print(f"\nNOMBRE: \t\t PROMEDIO:")
 for i in range(A):
     print(f"{i}. {N[i]}: \t\t {P[i]}")
-
-
-
-
