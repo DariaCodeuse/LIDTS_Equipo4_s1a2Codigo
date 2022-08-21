@@ -1,7 +1,7 @@
 # PROGRAMA:     Registro de compras con array bidimencional, debe leer:
 #               nombre del producto, precio, cant y proporciona subtotal y total
 # EQUIPO:       Equipo 4
-# FECHA:        Augost 30th, 2022
+# FECHA:        
 
 # Programa que resgitra tareas escolares y las ordenar segun fecha de entrega ()
 regis = [[], [], []]  # ARRAY BIDIMENSIONAL

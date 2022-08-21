@@ -2,7 +2,7 @@
 #               pasteles y relleno de una pastelería durante una semana.
 #               (Utiliza un array bidimencional y 2 arrays simples)
 # EQUIPO:       Equipo 4
-# FECHA:        Augost 30th, 2022
+# FECHA:        
 
 # ARRAY de productos disponibles en la pastelería
 pasteles = ["Chocolate", "Red Velvet", "Tres leches", "Marmól","Zanaoria", "Moca-café"]
