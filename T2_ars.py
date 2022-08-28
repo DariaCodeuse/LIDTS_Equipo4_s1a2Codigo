@@ -1,7 +1,7 @@
 # PROGRAMA:     Registro de compras con array bidimencional, debe leer:
 #               nombre del producto, precio, cant y proporciona subtotal y total
 # EQUIPO:       Equipo 4
-# FECHA:        
+# FECHA:        Martes 30 de agosto
 
 # Programa que resgitra tareas escolares y las ordenar segun fecha de entrega ()
 regis = [[], [], []]  # ARRAY BIDIMENSIONAL
@@ -22,8 +22,8 @@ print(f"|------ PRODUCTO -------|---- PRECIO ---|-- CANTIDAD ---|---SUBTOTAL----
 
 # Ciclo para recorrer ARRAY
 for i in range(row):
-    sub = regis[1][i] * regis[2][i] # Subtotal
-    total =+ sub    # Total
-    print(f"|\t{regis[0][i]}\t|\t${regis[1][i]}\t|\t${regis[2][i]}\t|\t${sub}\t|".ljust(10,"-").upper())
+        sub = regis[1][i] * regis[2][i] # Subtotal
+        total =+ sub    # Total
+        print(f"|\t{regis[0][i]}\t|\t${regis[1][i]}\t|\t${regis[2][i]}\t|\t${sub}\t|".ljust(10,"-").upper())
 
 print(f" TOTAL:  ${total}".rjust(70,">"))
