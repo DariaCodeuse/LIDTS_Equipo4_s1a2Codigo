@@ -2,7 +2,7 @@
 #               (un vector c/u) después ordenar de mayor a menor promedio, 
 #               los nombres deben corresponder con los promedios
 # EQUIPO:       Equipo 4
-# FECHA:        
+# FECHA:        Martes 30 de agosto
 
 # ARRAYS vacios para guardar datos y variables auxiliares
 name = []      # Nombre ARRAY
