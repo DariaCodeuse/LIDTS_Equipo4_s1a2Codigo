@@ -1,4 +1,4 @@
-# PROGRAMA:     Algortimo para capturar promedios y nombres de estudiantes en 2 arreglos,
+# PROGRAMA:     Capturar promedios y nombres de estudiantes en 2 arreglos,
 #               (un vector c/u) después ordenar de mayor a menor promedio, 
 #               los nombres deben corresponder con los promedios
 # EQUIPO:       Equipo 4
