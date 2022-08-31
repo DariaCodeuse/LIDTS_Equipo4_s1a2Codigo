@@ -6,56 +6,48 @@ import random # importando libreria para aleatorizar datos
 
 # Diccionario para almacenar nuestros datos
 data={
-    "1name":[],
-    "2name":[],
-    "1lastn":[],
-    "2lastn":[],
+    "keyword":[],
+    "keryword2":[],
+    "keyword3":[],
 }
 
 # Strings para generar nuestro username de manera aleatoria
 numeric="0123456789"
-alpha="abcdefghijklmnopqrstuvwxyz"
+# alpha="abcdefghijklmnopqrstuvwxyz"
 
 def AddData(): # funcion para agregar datos a nuestro diccionario (puede modificarse a palabras claves etc)
 
     # repetir cada introduccion de datos en caso de tener espacios y numeros, solo se aceptan caracteres
     while True:
-        name=str(input("Primer nombre: "))
-        if name.isalpha()==True and name.isspace()==False:
-            data['1name'].append(name)
+        kw=str(input("Palabra clave: "))
+        if kw.isalpha()==True and kw.isspace()==False:
+            data['keyword'].append(kw)
             break
         print("No utilize espacios o números!")
     
     while True:
-        name2=str(input("Segundo nombre: "))
-        if name2.isalpha()==True and name2.isspace()==False:
-            data['2name'].append(name2)
+        kw2=str(input("Palabra clave: "))
+        if kw2.isalpha()==True and kw2.isspace()==False:
+            data['keryword2'].append(kw2)
             break
         print("No utilize espacios o números!")
 
     while True:
-        lastn1=str(input("Apellido paterno: "))
-        if lastn1.isalpha()==True and lastn1.isspace()==False:
-            data['1lastn'].append(lastn1)
-            break
-        print("No utilize espacios o números!")
-
-    while True:
-        lastn2=str(input("Apellido materno: "))
-        if lastn2.isalpha()==True and lastn2.isspace()==False:
-            data['2lastn'].append(lastn2)
+        kw3=str(input("APalabra clave: "))
+        if kw3.isalpha()==True and kw3.isspace()==False:
+            data['keyword3'].append(kw3)
             break
         print("No utilize espacios o números!")
 
 def usernameGen(): # Generador de nuestro username a partir de un prefijo (nombres o palabras claves) y un sufijo (letras y numeros), ambos de manera aleatoria
     sizefix=6 # tamaño para el prefijo y sufijo
 
-    a=data['1lastn'][0]+ data['1name'][0] + data['2name'][0]+data['2lastn'][0]+data['2name'][0] #reuniendo nuestros datos en una sola variable
+    a=data['keyword'][0]+ data['keryword2'][0] + data['keyword3'][0] #reuniendo nuestros datos en una sola variable
     prefix="".join(random.sample(a, sizefix)) # randomizando nuestros datos para formar un prefijo
     sufix="".join(random.sample(numeric, sizefix)) # randomizando números y letras para formar un sufijo
 
     usr=prefix+sufix # uniendo ambas variables para formar un solo username
-    print(f"Tu nombre de usuario/id/matricula es: {usr}")
+    print(f"Tu nombre de usuario: {usr}")
     
     while True: # Preguntar hasta que se obtenga una opción valida
         sct=int(input("Quiere usar otro nombre de usuario?\n1) Sí(s)\n2) No(n)\nSeleccione el número correspondiente: "))
