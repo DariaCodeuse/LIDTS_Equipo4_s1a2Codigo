@@ -104,7 +104,7 @@ def remTask(d):
     taskdb[sm[d-1]]["desc"].pop(rem-1)
 
 def printer():
-    f=open("task/taskyfy.txt","w")
+    f=open("taskyfy.txt","w")
     for w in range(5):
         f.write(sm[w].upper()+"\n\n")
         for m in range(len(taskdb[sm[w]]["act"])):

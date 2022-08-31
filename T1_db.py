@@ -42,12 +42,11 @@ vndo_anime={
 }
 print(f"Anime list".upper().center(50))
 print("Cuantos animes deseas agregar?")
-a=int(input())
 
+a=int(input())
 animelist(a)
 
-f=open("anime/data.txt", "w")
-
+f=open("data.txt", "w")
 if len(vt_anime['n'])>0:
     print(f"Escribiendo lista de animes completados...")
     f.write("completados\n".upper())
